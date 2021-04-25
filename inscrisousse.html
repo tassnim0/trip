@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+<title>inscrisousse</title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 
+	background-position:center;
+	background-size:cover;
+	font-family:sans-serif;
+	margin-top:40px;
+
+}
+.sousse{
+	width:800px;
+	background-color:rgb(0,0,0,0.6);
+	margin:auto;
+	color:#FFFFFF;
+	padding:10px 0px 10px 0px;
+	text-align:center;
+	border-radius:15px 15px 0px 0px;
+}
+.inscri{
+	background-color:rgb(0,0,0,0.5);
+	width:800px;
+	margin:auto;
+}
+form{
+	padding:10px;
+}
+#name{ width:100%;
+height:100px;
+}
+.123{margin-left:25px;
+margin-top:30px;
+width:125px;
+color:white;
+font-size:18px;
+font-weight:700;
+ }
+.Nom1{position:relative;
+	 left:200px;
+		top:-37px;
+		line-height:40px;
+		border-radius:6px;
+		padding:0 22px;
+		font-size:16px;}
+.Nom2{
+position:relative;
+left:417px;
+top:-80px;
+line-height:40px;
+border-radius:6px;
+padding:0 22px;
+font-size:16px;
+color:#555;
+}
+.label1{position:relative;
+color:#E5E5E5;
+text-transform:capitalize;
+font-size:14px;
+left:235px;
+top:-45px;
+}
+.label2{position:relative;
+color:#E5E5E5;
+text-transform:capitalize;
+font-size:14px;
+left:492px;
+top:-76px;
+}
+.radio{
+display:inline-block;
+padding-right:70px;
+font-size:25px;
+margin-left:25px;
+margin-top:15px;
+color:white;
+}
+.radio input{width:20px;
+height:20px;
+left:200px;
+border-radius:50%;
+cursor:pointer;
+outline:none;
+text-align:center;
+
+}
+.Email{
+	position:relative;
+	left:200px;
+	top:-37px;
+	line-height:40px;
+	width:450px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16x;
+	color:#555;
+}
+.code{
+	position:relative;
+	left:200px;
+	top:-37px;
+	line-height:40px;
+	width:100px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16x;
+	color:#555;
+}
+.numero{
+	position:relative;
+	left:150px;
+	top:-37px;
+	line-height:40px;
+	width:200px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16x;
+	color:#555;
+}
+.indicatifs_regionaux{
+	position:relative;
+	color:#E5E5E5;
+	text-transform:capitalize;
+	font-size:16px;
+	left:54px;
+	top:-4px;
+}
+.num{ 
+position:relative;
+color:#E5E5E5;
+text-transform:capitalize;
+font-size:16px;
+left:10px;
+top:-2px;}
+.Age{
+	position:relative;
+	left:200px;
+	top:-25px;
+	line-height:40px;
+	width:450px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	color:#555;
+}
+.Nombre-de-personne{
+	position:relative;
+	left:200px;
+	top:-25px;
+	line-height:40px;
+	width:450px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	color:#555;
+
+}
+.Nombre-de-jour{
+	position:relative;
+	left:200px;
+	top:-25px;
+	line-height:40px;
+	width:450px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16px;
+	color:#555;
+}
+.option{
+	position:relative;
+	left:200px;
+	top:-30px;
+	line-height:40px;
+	width:495px;
+	height:40px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16x;
+	color:#555;
+	outline:none;
+	overflow:hidden;
+}
+.option option{
+	font-size:20px;
+}
+button{
+	background-color:#3BAF9F;
+	display:block;
+	margin:20px 0px 0px 20px;
+	text-align:center;
+	border-radius:12px;
+	border:2px solid #366473;
+	padding:14px 110px;
+	outline:none;
+	cursor:pointer;
+	transition:0.25px;
+}
+button:hover{background-color:#5390F5;}
+h1{
+	color:#87cefa;
+}
+
+.bt{
+	top:0px;
+    font-size:20px;
+   font-weight :800;
+	background-color:rgb(0,0,0,0.5);
+	display:block;
+	margin:20px 0px 0px 20px;
+	text-align:center;
+	border-radius:12px;
+	border:0.5px solid #366473;
+	padding:10px 50px;
+	outline:none;
+	cursor:pointer;
+	transition:0.25px;
+
+}
+.bt:hover{background-color:#5390F5;}
+.prix{
+	position:relative;
+	left:200px;
+	top:62px;
+	line-height:40px;
+	width:450px;
+	border-radius:6px;
+	padding:0 22px;
+	font-size:16x;
+	color:#555;
+}
+</style>
+</head>
+<body background="00.jfif">
+ <div class="sousse"><h1>SOUSSE</h1></div>
+ <div class="inscri">
+ <form name="form1">
+ <div id="name">
+ <h2 class="123">Nom et Prénom</h2>
+ <input class="Nom1" type="text" name="Nom et Prénom" onfocus="color(this)" onblur="couleur(this)"><br>
+<label class="label1">Nom</label>
+  <input class="Nom2" type="text" name="Nom et Prénom" onfocus="color(this)" onblur="couleur(this)"><br>
+<label class="label2">Prénom</label></div>
+<h2 class="123">Age</h2>
+<input class="Age" type="date" name="Age" onfocus="color(this)" onblur="couleur(this)">
+<h2 class="123">Email</h2>
+<input class="Email" type="email" name="Email" placeholder="nom.prénom@gmail.com"  onfocus="color(this)" onblur="couleur(this)">
+<h2 class="123">Téléphone</h2>
+<input class="code" type="text" name="indicatifs_regionaux" onfocus="color(this)" onblur="couleur(this)">
+<label class="indicatifs_regionaux">Indicatifs régionaux</label>
+<input class="numero" type="text" name="Telephone" placeholder="        *   *    *   *   *    *   *   *" onfocus="color(this)" onblur="couleur(this)">
+<label class="num">Téléphone</label>
+<h2 id="fh">Sexe</h2>
+<input class="Sexe" type="radio" name="Sexe" value="Femme" onfocus="color(this)" onblur="couleur(this)"><label class="radio"  for="Femme">Femme</label>
+<input class="Sexe" type="radio" name="Sexe" value="Homme" onfocus="color(this)" onblur="couleur(this)"><label class="radio" for="Homme">Homme</label>
+<br><br><br>
+<center><hr width="50%"></center>
+ <br><br>
+ <h2 class="123">Choisir un lieu: </h2>
+<select class="option" name="lieu" onfocus="color(this)" onblur="couleur(this)">
+<option>Médina de Sousse</option>
+<option>Le Ribat</option>
+<option>Musée archéologique de Sousse</option>
+<option>Musée Dar Essid</option>
+<option>Magic eye Sousse</option>
+<option>Dar si Taïeb</option>
+<option>Grande mosquée de Sousse</option>
+<option>La statue équestre de Bourguiba</option>
+<option>L’église Saint-Félix</option>
+<option>La Kasbah de Sousse</option>
+</select>
+<h2 class="123">Personne:</h2>
+<input class="Nombre-de-personne"  type="Number" name="Nombredepersonne" onfocus="color(this)" onblur="couleur(this)">
+<h2 class="123">Nombre de jour:</h2>
+<input class="Nombre-de-jour" id="n2" type="Number" name="Nombredejour" onfocus="color(this)" onblur="couleur(this)">
+<input type="text" class="prix" name="prix" onblur="couleur(this)" onfocus="color(this)">
+<input type="button" value="Prix" class="bt" onclick="calc()">
+<center><button  type="submit" value="j'inscris">j'inscris</button></center>
+</div></div></form>
+<script language="javascript">
+function color(x){
+	x.style.color="#87cefa";
+	x.style.background="grey";
+}
+function couleur(x){
+	x.style.color="grey";
+	x.style.background="#87cefa";
+}
+function calc(){
+	x=document.form1.Nombredejour.value*(document.form1.Nombredepersonne.value*30);
+	document.form1.prix.value=x;
+}
+</script>
+</body>
+<html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
